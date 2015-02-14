@@ -6,7 +6,7 @@ PhpStorm PrestaShop Autocomplete
 ## Why do I need this ?
 
 If you use PhpStorm and PrestaShop you probably noticed that you can't get
-your IDE to autocomplete everything. PrestaShop is designed to be overridden
+your IDE to autocomplete everything. PrestaShop is designed to be overridden,
 and every class from the core is suffixed with 'Core'.
 
 For example, Address class is actually declared this way:
@@ -28,7 +28,7 @@ class AddressCore extends ObjectModel
 
  ![how-to-get-phpstorm-autocomplete-prestashop.png](http://cdn.sigerr.org/phpstorm-prestashop-autocomplete/how-to-get-phpstorm-autocomplete-prestashop.png "How to get autocomplete with PhpStorm and PrestaShop")
 
-## How is it working
+## How It Works
 
 The file autocomplete.php will extend each Core class and use the correct name.
 
