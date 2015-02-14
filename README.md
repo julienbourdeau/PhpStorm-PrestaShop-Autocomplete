@@ -3,6 +3,8 @@ PhpStorm PrestaShop Autocomplete
 
 ![phpstorm-prestashop-autocomplete-screenshot.png](http://cdn.sigerr.org/phpstorm-prestashop-autocomplete/phpstorm-prestashop-autocomplete-screenshot.png "Follow this tutorial and this is what you'll get")
 
+Les explications en français sont disponibles ici: http://blog.julienbourdeau.com/geek/phpstorm-lautocompletion-avec-prestashop/
+
 ## Why do I need this ?
 
 If you use PhpStorm and PrestaShop you probably noticed that you can't get
