@@ -1,7 +1,7 @@
 PhpStorm PrestaShop Autocomplete
 ================================
 
-IMAGE
+![phpstorm-prestashop-autocomplete-screenshot.png](http://cdn.sigerr.org/phpstorm-prestashop-autocomplete/phpstorm-prestashop-autocomplete-screenshot.png "Follow this tutorial and this is what you'll get")
 
 ## Why do I need this ?
 
@@ -26,8 +26,7 @@ class AddressCore extends ObjectModel
  1. Click on '+'
  1. Select the folder containing autocomplete.php
 
-IMAGE
-
+ ![how-to-get-phpstorm-autocomplete-prestashop.png](http://cdn.sigerr.org/phpstorm-prestashop-autocomplete/how-to-get-phpstorm-autocomplete-prestashop.png "How to get autocomplete with PhpStorm and PrestaShop")
 
 ## How is it working
 
@@ -36,3 +35,7 @@ The file autocomplete.php will extend each Core class and use the correct name.
 ```php
 class Address extends AddressCore {}
 ```
+
+### Credits
+
+This is based on an original idea from [dkarvounaris](https://github.com/dkarvounaris/PHPStorm-CC-PrestaShop)
