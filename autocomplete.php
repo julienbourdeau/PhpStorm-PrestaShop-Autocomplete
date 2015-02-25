@@ -280,6 +280,7 @@ class Shop extends ShopCore {}
 class ShopGroup extends ShopGroupCore {}
 class ShopUrl extends ShopUrlCore {}
 class SitemapController extends SitemapControllerCore {}
+class SmartyCustom extends SmartyCustomCore {}
 class SpecificPrice extends SpecificPriceCore {}
 class SpecificPriceRule extends SpecificPriceRuleCore {}
 class State extends StateCore {}
