@@ -1,5 +1,5 @@
 <?php
-class AbstractLogger extends AbstractLoggerCore {}
+abstract class AbstractLogger extends AbstractLoggerCore {}
 class Address extends AddressCore {}
 class AddressController extends AddressControllerCore {}
 class AddressFormat extends AddressFormatCore {}
@@ -112,13 +112,13 @@ class Blowfish extends BlowfishCore {}
 class CMS extends CMSCore {}
 class CMSCategory extends CMSCategoryCore {}
 class CSV extends CSVCore {}
-class Cache extends CacheCore {}
+abstract class Cache extends CacheCore {}
 class CacheApc extends CacheApcCore {}
 class CacheFs extends CacheFsCore {}
 class CacheMemcache extends CacheMemcacheCore {}
 class CacheXcache extends CacheXcacheCore {}
 class Carrier extends CarrierCore {}
-class CarrierModule extends CarrierModuleCore {}
+abstract class CarrierModule extends CarrierModuleCore {}
 class Cart extends CartCore {}
 class CartController extends CartControllerCore {}
 class CartRule extends CartRuleCore {}
@@ -138,7 +138,7 @@ class ConnectionsSource extends ConnectionsSourceCore {}
 class Contact extends ContactCore {}
 class ContactController extends ContactControllerCore {}
 class Context extends ContextCore {}
-class Controller extends ControllerCore {}
+abstract class Controller extends ControllerCore {}
 class ControllerFactory extends ControllerFactoryCore {}
 class Cookie extends CookieCore {}
 class Country extends CountryCore {}
@@ -150,7 +150,7 @@ class CustomerThread extends CustomerThreadCore {}
 class Customization extends CustomizationCore {}
 class CustomizationField extends CustomizationFieldCore {}
 class DateRange extends DateRangeCore {}
-class Db extends DbCore {}
+abstract class Db extends DbCore {}
 class DbMySQLi extends DbMySQLiCore {}
 class DbPDO extends DbPDOCore {}
 class DbQuery extends DbQueryCore {}
@@ -170,7 +170,7 @@ class Group extends GroupCore {}
 class GroupReduction extends GroupReductionCore {}
 class Guest extends GuestCore {}
 class GuestTrackingController extends GuestTrackingControllerCore {}
-class HTMLTemplate extends HTMLTemplateCore {}
+abstract class HTMLTemplate extends HTMLTemplateCore {}
 class HTMLTemplateDeliverySlip extends HTMLTemplateDeliverySlipCore {}
 class HTMLTemplateInvoice extends HTMLTemplateInvoiceCore {}
 class HTMLTemplateOrderReturn extends HTMLTemplateOrderReturnCore {}
@@ -190,13 +190,13 @@ class HelperUploader extends HelperUploaderCore {}
 class HelperView extends HelperViewCore {}
 class HistoryController extends HistoryControllerCore {}
 class Hook extends HookCore {}
-class ITreeToolbar extends ITreeToolbarCore {}
-class ITreeToolbarButton extends ITreeToolbarButtonCore {}
+interface ITreeToolbar extends ITreeToolbarCore {}
+interface ITreeToolbarButton extends ITreeToolbarButtonCore {}
 class IdentityController extends IdentityControllerCore {}
 class Image extends ImageCore {}
 class ImageManager extends ImageManagerCore {}
 class ImageType extends ImageTypeCore {}
-class ImportModule extends ImportModuleCore {}
+abstract class ImportModule extends ImportModuleCore {}
 class IndexController extends IndexControllerCore {}
 class Language extends LanguageCore {}
 class Link extends LinkCore {}
@@ -210,10 +210,10 @@ class Meta extends MetaCore {}
 class Module extends ModuleCore {}
 class ModuleAdminController extends ModuleAdminControllerCore {}
 class ModuleFrontController extends ModuleFrontControllerCore {}
-class ModuleGraph extends ModuleGraphCore {}
-class ModuleGraphEngine extends ModuleGraphEngineCore {}
-class ModuleGrid extends ModuleGridCore {}
-class ModuleGridEngine extends ModuleGridEngineCore {}
+abstract class ModuleGraph extends ModuleGraphCore {}
+abstract class ModuleGraphEngine extends ModuleGraphEngineCore {}
+abstract class ModuleGrid extends ModuleGridCore {}
+abstract class ModuleGridEngine extends ModuleGridEngineCore {}
 class MyAccountController extends MyAccountControllerCore {}
 class MySQL extends MySQLCore {}
 class NewProductsController extends NewProductsControllerCore {}
@@ -280,6 +280,7 @@ class Shop extends ShopCore {}
 class ShopGroup extends ShopGroupCore {}
 class ShopUrl extends ShopUrlCore {}
 class SitemapController extends SitemapControllerCore {}
+class SmartyCustom extends SmartyCustomCore {}
 class SpecificPrice extends SpecificPriceCore {}
 class SpecificPriceRule extends SpecificPriceRuleCore {}
 class State extends StateCore {}
