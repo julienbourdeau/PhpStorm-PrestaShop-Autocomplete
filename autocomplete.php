@@ -334,3 +334,12 @@ class WebserviceRequest extends WebserviceRequestCore {}
 class WebserviceSpecificManagementImages extends WebserviceSpecificManagementImagesCore {}
 class WebserviceSpecificManagementSearch extends WebserviceSpecificManagementSearchCore {}
 class Zone extends ZoneCore {}
+
+/*******************************************/
+/*              Class aliases              */
+/*******************************************/
+
+class Autoload extends PrestaShopAutoload {}
+class Backup extends PrestaShopBackup {}
+class Collection extends PrestaShopCollection {}
+class Logger extends PrestaShopLogger {}
