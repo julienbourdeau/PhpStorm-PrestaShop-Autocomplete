@@ -1,7 +1,7 @@
 PhpStorm PrestaShop Autocomplete
 ================================
 
-![phpstorm-prestashop-autocomplete-screenshot.png](http://cdn.sigerr.org/phpstorm-prestashop-autocomplete/phpstorm-prestashop-autocomplete-screenshot.png "Follow this tutorial and this is what you'll get")
+![phpstorm-prestashop-autocomplete-screenshot.png](/img1.png?raw=true "Follow this tutorial and this is what you'll get")
 
 Les explications en français sont disponibles ici: http://blog.julienbourdeau.com/geek/phpstorm-lautocompletion-avec-prestashop/
 
@@ -28,7 +28,7 @@ class AddressCore extends ObjectModel
  1. Click on '+'
  1. Select the folder containing autocomplete.php
 
- ![how-to-get-phpstorm-autocomplete-prestashop.png](http://cdn.sigerr.org/phpstorm-prestashop-autocomplete/how-to-get-phpstorm-autocomplete-prestashop.png "How to get autocomplete with PhpStorm and PrestaShop")
+ ![how-to-get-phpstorm-autocomplete-prestashop.png](/img2.png?raw=true "How to get autocomplete with PhpStorm and PrestaShop")
 
 ## How It Works
 
