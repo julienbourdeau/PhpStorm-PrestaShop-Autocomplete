@@ -116,6 +116,7 @@ abstract class Cache extends CacheCore {}
 class CacheApc extends CacheApcCore {}
 class CacheFs extends CacheFsCore {}
 class CacheMemcache extends CacheMemcacheCore {}
+class CacheMemcached extends CacheMemcachedCore {}
 class CacheXcache extends CacheXcacheCore {}
 class Carrier extends CarrierCore {}
 abstract class CarrierModule extends CarrierModuleCore {}
@@ -127,6 +128,7 @@ class CategoryController extends CategoryControllerCore {}
 class ChangeCurrencyController extends ChangeCurrencyControllerCore {}
 class Chart extends ChartCore {}
 class CmsController extends CmsControllerCore {}
+class CMSRole extends CMSRoleCore {}
 class Combination extends CombinationCore {}
 class CompareController extends CompareControllerCore {}
 class CompareProduct extends CompareProductCore {}
@@ -184,6 +186,7 @@ class HelperKpi extends HelperKpiCore {}
 class HelperKpiRow extends HelperKpiRowCore {}
 class HelperList extends HelperListCore {}
 class HelperOptions extends HelperOptionsCore {}
+class HelperShop extends HelperShopCore {}
 class HelperTreeCategories extends HelperTreeCategoriesCore {}
 class HelperTreeShops extends HelperTreeShopsCore {}
 class HelperUploader extends HelperUploaderCore {}
