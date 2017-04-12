@@ -1,9 +1,33 @@
 <?php
+abstract class AbstractAssetManager extends AbstractAssetManagerCore {}
+abstract class AbstractCheckoutStep extends AbstractCheckoutStepCore {}
+abstract class AbstractForm extends AbstractFormCore {}
 abstract class AbstractLogger extends AbstractLoggerCore {}
+abstract class AdminStatsTabController extends AdminStatsTabControllerCore {}
+abstract class Cache extends CacheCore {}
+abstract class CarrierModule extends CarrierModuleCore {}
+abstract class Controller extends ControllerCore {}
+abstract class Db extends DbCore {}
+abstract class HTMLTemplate extends HTMLTemplateCore {}
+abstract class Module extends ModuleCore {}
+abstract class ModuleAdminController extends ModuleAdminControllerCore {}
+abstract class ModuleGraph extends ModuleGraphCore {}
+abstract class ModuleGraphEngine extends ModuleGraphEngineCore {}
+abstract class ModuleGrid extends ModuleGridCore {}
+abstract class ModuleGridEngine extends ModuleGridEngineCore {}
+abstract class ObjectModel extends ObjectModelCore {}
+abstract class PaymentModule extends PaymentModuleCore {}
+abstract class ProductListingFrontController extends ProductListingFrontControllerCore {}
+abstract class ProductPresentingFrontController extends ProductPresentingFrontControllerCore {}
+abstract class StockManagerModule extends StockManagerModuleCore {}
+abstract class TaxManagerModule extends TaxManagerModuleCore {}
+abstract class TreeToolbarButton extends TreeToolbarButtonCore {}
+class Access extends AccessCore {}
 class Address extends AddressCore {}
+class AddressChecksum extends AddressChecksumCore {}
 class AddressController extends AddressControllerCore {}
-class AddressFormat extends AddressFormatCore {}
 class AddressesController extends AddressesControllerCore {}
+class AddressFormat extends AddressFormatCore {}
 class AdminAccessController extends AdminAccessControllerCore {}
 class AdminAddonsCatalogController extends AdminAddonsCatalogControllerCore {}
 class AdminAddressesController extends AdminAddressesControllerCore {}
@@ -12,8 +36,8 @@ class AdminAttachmentsController extends AdminAttachmentsControllerCore {}
 class AdminAttributeGeneratorController extends AdminAttributeGeneratorControllerCore {}
 class AdminAttributesGroupsController extends AdminAttributesGroupsControllerCore {}
 class AdminBackupController extends AdminBackupControllerCore {}
-class AdminCarrierWizardController extends AdminCarrierWizardControllerCore {}
 class AdminCarriersController extends AdminCarriersControllerCore {}
+class AdminCarrierWizardController extends AdminCarrierWizardControllerCore {}
 class AdminCartRulesController extends AdminCartRulesControllerCore {}
 class AdminCartsController extends AdminCartsControllerCore {}
 class AdminCategoriesController extends AdminCategoriesControllerCore {}
@@ -25,8 +49,8 @@ class AdminController extends AdminControllerCore {}
 class AdminCountriesController extends AdminCountriesControllerCore {}
 class AdminCurrenciesController extends AdminCurrenciesControllerCore {}
 class AdminCustomerPreferencesController extends AdminCustomerPreferencesControllerCore {}
-class AdminCustomerThreadsController extends AdminCustomerThreadsControllerCore {}
 class AdminCustomersController extends AdminCustomersControllerCore {}
+class AdminCustomerThreadsController extends AdminCustomerThreadsControllerCore {}
 class AdminDashboardController extends AdminDashboardControllerCore {}
 class AdminDeliverySlipController extends AdminDeliverySlipControllerCore {}
 class AdminEmailsController extends AdminEmailsControllerCore {}
@@ -40,12 +64,12 @@ class AdminImportController extends AdminImportControllerCore {}
 class AdminInformationController extends AdminInformationControllerCore {}
 class AdminInvoicesController extends AdminInvoicesControllerCore {}
 class AdminLanguagesController extends AdminLanguagesControllerCore {}
+class AdminLegacyLayoutController extends AdminLegacyLayoutControllerCore {}
 class AdminLocalizationController extends AdminLocalizationControllerCore {}
 class AdminLoginController extends AdminLoginControllerCore {}
 class AdminLogsController extends AdminLogsControllerCore {}
 class AdminMaintenanceController extends AdminMaintenanceControllerCore {}
 class AdminManufacturersController extends AdminManufacturersControllerCore {}
-class AdminMarketingController extends AdminMarketingControllerCore {}
 class AdminMetaController extends AdminMetaControllerCore {}
 class AdminModulesController extends AdminModulesControllerCore {}
 class AdminModulesPositionsController extends AdminModulesPositionsControllerCore {}
@@ -54,21 +78,19 @@ class AdminOrderMessageController extends AdminOrderMessageControllerCore {}
 class AdminOrderPreferencesController extends AdminOrderPreferencesControllerCore {}
 class AdminOrdersController extends AdminOrdersControllerCore {}
 class AdminOutstandingController extends AdminOutstandingControllerCore {}
-class AdminPPreferencesController extends AdminPPreferencesControllerCore {}
 class AdminPatternsController extends AdminPatternsControllerCore {}
 class AdminPaymentController extends AdminPaymentControllerCore {}
+class AdminPaymentPreferencesController extends AdminPaymentPreferencesControllerCore {}
 class AdminPdfController extends AdminPdfControllerCore {}
 class AdminPerformanceController extends AdminPerformanceControllerCore {}
+class AdminPPreferencesController extends AdminPPreferencesControllerCore {}
 class AdminPreferencesController extends AdminPreferencesControllerCore {}
 class AdminProductsController extends AdminProductsControllerCore {}
 class AdminProfilesController extends AdminProfilesControllerCore {}
 class AdminQuickAccessesController extends AdminQuickAccessesControllerCore {}
-class AdminRangePriceController extends AdminRangePriceControllerCore {}
-class AdminRangeWeightController extends AdminRangeWeightControllerCore {}
 class AdminReferrersController extends AdminReferrersControllerCore {}
 class AdminRequestSqlController extends AdminRequestSqlControllerCore {}
 class AdminReturnController extends AdminReturnControllerCore {}
-class AdminScenesController extends AdminScenesControllerCore {}
 class AdminSearchConfController extends AdminSearchConfControllerCore {}
 class AdminSearchController extends AdminSearchControllerCore {}
 class AdminSearchEnginesController extends AdminSearchEnginesControllerCore {}
@@ -80,7 +102,6 @@ class AdminSlipController extends AdminSlipControllerCore {}
 class AdminSpecificPriceRuleController extends AdminSpecificPriceRuleControllerCore {}
 class AdminStatesController extends AdminStatesControllerCore {}
 class AdminStatsController extends AdminStatsControllerCore {}
-class AdminStatsTabController extends AdminStatsTabControllerCore {}
 class AdminStatusesController extends AdminStatusesControllerCore {}
 class AdminStockConfigurationController extends AdminStockConfigurationControllerCore {}
 class AdminStockCoverController extends AdminStockCoverControllerCore {}
@@ -90,11 +111,11 @@ class AdminStockMvtController extends AdminStockMvtControllerCore {}
 class AdminStoresController extends AdminStoresControllerCore {}
 class AdminSuppliersController extends AdminSuppliersControllerCore {}
 class AdminSupplyOrdersController extends AdminSupplyOrdersControllerCore {}
-class AdminTab extends AdminTabCore {}
 class AdminTabsController extends AdminTabsControllerCore {}
 class AdminTagsController extends AdminTagsControllerCore {}
-class AdminTaxRulesGroupController extends AdminTaxRulesGroupControllerCore {}
 class AdminTaxesController extends AdminTaxesControllerCore {}
+class AdminTaxRulesGroupController extends AdminTaxRulesGroupControllerCore {}
+class AdminThemesCatalogController extends AdminThemesCatalogControllerCore {}
 class AdminThemesController extends AdminThemesControllerCore {}
 class AdminTrackingController extends AdminTrackingControllerCore {}
 class AdminTranslationsController extends AdminTranslationsControllerCore {}
@@ -107,31 +128,31 @@ class AttachmentController extends AttachmentControllerCore {}
 class Attribute extends AttributeCore {}
 class AttributeGroup extends AttributeGroupCore {}
 class AuthController extends AuthControllerCore {}
-class BestSalesController extends BestSalesControllerCore {}
-class Blowfish extends BlowfishCore {}
-class CMS extends CMSCore {}
-class CMSCategory extends CMSCategoryCore {}
-class CSV extends CSVCore {}
-abstract class Cache extends CacheCore {}
 class CacheApc extends CacheApcCore {}
-class CacheFs extends CacheFsCore {}
 class CacheMemcache extends CacheMemcacheCore {}
 class CacheMemcached extends CacheMemcachedCore {}
 class CacheXcache extends CacheXcacheCore {}
 class Carrier extends CarrierCore {}
-abstract class CarrierModule extends CarrierModuleCore {}
 class Cart extends CartCore {}
+class CartChecksum extends CartChecksumCore {}
 class CartController extends CartControllerCore {}
 class CartRule extends CartRuleCore {}
 class Category extends CategoryCore {}
-class CategoryController extends CategoryControllerCore {}
+class CccReducer extends CccReducerCore {}
 class ChangeCurrencyController extends ChangeCurrencyControllerCore {}
 class Chart extends ChartCore {}
+class CheckoutAddressesStep extends CheckoutAddressesStepCore {}
+class CheckoutDeliveryStep extends CheckoutDeliveryStepCore {}
+class CheckoutPaymentStep extends CheckoutPaymentStepCore {}
+class CheckoutPersonalInformationStep extends CheckoutPersonalInformationStepCore {}
+class CheckoutProcess extends CheckoutProcessCore {}
+class CheckoutSession extends CheckoutSessionCore {}
+class CMS extends CMSCore {}
+class CMSCategory extends CMSCategoryCore {}
 class CmsController extends CmsControllerCore {}
 class CMSRole extends CMSRoleCore {}
 class Combination extends CombinationCore {}
-class CompareController extends CompareControllerCore {}
-class CompareProduct extends CompareProductCore {}
+class ConditionsToApproveFinder extends ConditionsToApproveFinderCore {}
 class Configuration extends ConfigurationCore {}
 class ConfigurationKPI extends ConfigurationKPICore {}
 class ConfigurationTest extends ConfigurationTestCore {}
@@ -140,24 +161,30 @@ class ConnectionsSource extends ConnectionsSourceCore {}
 class Contact extends ContactCore {}
 class ContactController extends ContactControllerCore {}
 class Context extends ContextCore {}
-abstract class Controller extends ControllerCore {}
-class ControllerFactory extends ControllerFactoryCore {}
 class Cookie extends CookieCore {}
 class Country extends CountryCore {}
-class County extends CountyCore {}
+class CssMinifier extends CssMinifierCore {}
+class CSV extends CSVCore {}
 class Currency extends CurrencyCore {}
 class Customer extends CustomerCore {}
+class CustomerAddressForm extends CustomerAddressFormCore {}
+class CustomerAddressFormatter extends CustomerAddressFormatterCore {}
+class CustomerAddressPersister extends CustomerAddressPersisterCore {}
+class CustomerForm extends CustomerFormCore {}
+class CustomerFormatter extends CustomerFormatterCore {}
+class CustomerLoginForm extends CustomerLoginFormCore {}
+class CustomerLoginFormatter extends CustomerLoginFormatterCore {}
 class CustomerMessage extends CustomerMessageCore {}
+class CustomerPersister extends CustomerPersisterCore {}
 class CustomerThread extends CustomerThreadCore {}
 class Customization extends CustomizationCore {}
 class CustomizationField extends CustomizationFieldCore {}
 class DateRange extends DateRangeCore {}
-abstract class Db extends DbCore {}
 class DbMySQLi extends DbMySQLiCore {}
 class DbPDO extends DbPDOCore {}
 class DbQuery extends DbQueryCore {}
 class Delivery extends DeliveryCore {}
-class Discount extends DiscountCore {}
+class DeliveryOptionsFinder extends DeliveryOptionsFinderCore {}
 class DiscountController extends DiscountControllerCore {}
 class Dispatcher extends DispatcherCore {}
 class Employee extends EmployeeCore {}
@@ -165,6 +192,7 @@ class Feature extends FeatureCore {}
 class FeatureValue extends FeatureValueCore {}
 class FileLogger extends FileLoggerCore {}
 class FileUploader extends FileUploaderCore {}
+class FormField extends FormFieldCore {}
 class FrontController extends FrontControllerCore {}
 class Gender extends GenderCore {}
 class GetFileController extends GetFileControllerCore {}
@@ -172,12 +200,6 @@ class Group extends GroupCore {}
 class GroupReduction extends GroupReductionCore {}
 class Guest extends GuestCore {}
 class GuestTrackingController extends GuestTrackingControllerCore {}
-abstract class HTMLTemplate extends HTMLTemplateCore {}
-class HTMLTemplateDeliverySlip extends HTMLTemplateDeliverySlipCore {}
-class HTMLTemplateInvoice extends HTMLTemplateInvoiceCore {}
-class HTMLTemplateOrderReturn extends HTMLTemplateOrderReturnCore {}
-class HTMLTemplateOrderSlip extends HTMLTemplateOrderSlipCore {}
-class HTMLTemplateSupplyOrderForm extends HTMLTemplateSupplyOrderFormCore {}
 class Helper extends HelperCore {}
 class HelperCalendar extends HelperCalendarCore {}
 class HelperForm extends HelperFormCore {}
@@ -193,35 +215,30 @@ class HelperUploader extends HelperUploaderCore {}
 class HelperView extends HelperViewCore {}
 class HistoryController extends HistoryControllerCore {}
 class Hook extends HookCore {}
-interface ITreeToolbar extends ITreeToolbarCore {}
-interface ITreeToolbarButton extends ITreeToolbarButtonCore {}
+class HTMLTemplateDeliverySlip extends HTMLTemplateDeliverySlipCore {}
+class HTMLTemplateInvoice extends HTMLTemplateInvoiceCore {}
+class HTMLTemplateOrderReturn extends HTMLTemplateOrderReturnCore {}
+class HTMLTemplateOrderSlip extends HTMLTemplateOrderSlipCore {}
+class HTMLTemplateSupplyOrderForm extends HTMLTemplateSupplyOrderFormCore {}
 class IdentityController extends IdentityControllerCore {}
 class Image extends ImageCore {}
 class ImageManager extends ImageManagerCore {}
 class ImageType extends ImageTypeCore {}
-abstract class ImportModule extends ImportModuleCore {}
 class IndexController extends IndexControllerCore {}
+class JavascriptManager extends JavascriptManagerCore {}
+class JsMinifier extends JsMinifierCore {}
 class Language extends LanguageCore {}
 class Link extends LinkCore {}
+class LinkProxy extends LinkProxyCore {}
 class LocalizationPack extends LocalizationPackCore {}
 class Mail extends MailCore {}
 class Manufacturer extends ManufacturerCore {}
-class ManufacturerController extends ManufacturerControllerCore {}
 class Media extends MediaCore {}
 class Message extends MessageCore {}
 class Meta extends MetaCore {}
-class Module extends ModuleCore {}
-class ModuleAdminController extends ModuleAdminControllerCore {}
 class ModuleFrontController extends ModuleFrontControllerCore {}
-abstract class ModuleGraph extends ModuleGraphCore {}
-abstract class ModuleGraphEngine extends ModuleGraphEngineCore {}
-abstract class ModuleGrid extends ModuleGridCore {}
-abstract class ModuleGridEngine extends ModuleGridEngineCore {}
 class MyAccountController extends MyAccountControllerCore {}
-class MySQL extends MySQLCore {}
-class NewProductsController extends NewProductsControllerCore {}
 class Notification extends NotificationCore {}
-class ObjectModel extends ObjectModelCore {}
 class Order extends OrderCore {}
 class OrderCarrier extends OrderCarrierCore {}
 class OrderCartRule extends OrderCartRuleCore {}
@@ -234,7 +251,6 @@ class OrderFollowController extends OrderFollowControllerCore {}
 class OrderHistory extends OrderHistoryCore {}
 class OrderInvoice extends OrderInvoiceCore {}
 class OrderMessage extends OrderMessageCore {}
-class OrderOpcController extends OrderOpcControllerCore {}
 class OrderPayment extends OrderPaymentCore {}
 class OrderReturn extends OrderReturnCore {}
 class OrderReturnController extends OrderReturnControllerCore {}
@@ -242,18 +258,19 @@ class OrderReturnState extends OrderReturnStateCore {}
 class OrderSlip extends OrderSlipCore {}
 class OrderSlipController extends OrderSlipControllerCore {}
 class OrderState extends OrderStateCore {}
-class PDF extends PDFCore {}
-class PDFGenerator extends PDFGeneratorCore {}
 class Pack extends PackCore {}
 class Page extends PageCore {}
 class PageNotFoundController extends PageNotFoundControllerCore {}
-class ParentOrderController extends ParentOrderControllerCore {}
 class PasswordController extends PasswordControllerCore {}
-class PaymentCC extends PaymentCCCore {}
-class PaymentModule extends PaymentModuleCore {}
+class PaymentOptionsFinder extends PaymentOptionsFinderCore {}
+class PDF extends PDFCore {}
+class PDFGenerator extends PDFGeneratorCore {}
 class PdfInvoiceController extends PdfInvoiceControllerCore {}
 class PdfOrderReturnController extends PdfOrderReturnControllerCore {}
 class PdfOrderSlipController extends PdfOrderSlipControllerCore {}
+class PhpEncryption extends PhpEncryptionCore {}
+class PhpEncryptionEngine extends PhpEncryptionEngineCore {}
+class PhpEncryptionLegacyEngine extends PhpEncryptionLegacyEngineCore {}
 class PrestaShopBackup extends PrestaShopBackupCore {}
 class PrestaShopCollection extends PrestaShopCollectionCore {}
 class PrestaShopDatabaseException extends PrestaShopDatabaseExceptionCore {}
@@ -261,10 +278,11 @@ class PrestaShopException extends PrestaShopExceptionCore {}
 class PrestaShopLogger extends PrestaShopLoggerCore {}
 class PrestaShopModuleException extends PrestaShopModuleExceptionCore {}
 class PrestaShopPaymentException extends PrestaShopPaymentExceptionCore {}
-class PricesDropController extends PricesDropControllerCore {}
 class Product extends ProductCore {}
+class ProductAssembler extends ProductAssemblerCore {}
 class ProductController extends ProductControllerCore {}
 class ProductDownload extends ProductDownloadCore {}
+class ProductPresenterFactory extends ProductPresenterFactoryCore {}
 class ProductSale extends ProductSaleCore {}
 class ProductSupplier extends ProductSupplierCore {}
 class Profile extends ProfileCore {}
@@ -273,17 +291,16 @@ class RangePrice extends RangePriceCore {}
 class RangeWeight extends RangeWeightCore {}
 class Referrer extends ReferrerCore {}
 class RequestSql extends RequestSqlCore {}
-class Rijndael extends RijndaelCore {}
 class Risk extends RiskCore {}
-class Scene extends SceneCore {}
 class Search extends SearchCore {}
-class SearchController extends SearchControllerCore {}
 class SearchEngine extends SearchEngineCore {}
 class Shop extends ShopCore {}
 class ShopGroup extends ShopGroupCore {}
 class ShopUrl extends ShopUrlCore {}
 class SitemapController extends SitemapControllerCore {}
 class SmartyCustom extends SmartyCustomCore {}
+class SmartyResourceModule extends SmartyResourceModuleCore {}
+class SmartyResourceParent extends SmartyResourceParentCore {}
 class SpecificPrice extends SpecificPriceCore {}
 class SpecificPriceRule extends SpecificPriceRuleCore {}
 class State extends StateCore {}
@@ -292,14 +309,13 @@ class Stock extends StockCore {}
 class StockAvailable extends StockAvailableCore {}
 class StockManager extends StockManagerCore {}
 class StockManagerFactory extends StockManagerFactoryCore {}
-class StockManagerModule extends StockManagerModuleCore {}
 class StockMvt extends StockMvtCore {}
 class StockMvtReason extends StockMvtReasonCore {}
 class StockMvtWS extends StockMvtWSCore {}
 class Store extends StoreCore {}
 class StoresController extends StoresControllerCore {}
+class StylesheetManager extends StylesheetManagerCore {}
 class Supplier extends SupplierCore {}
-class SupplierController extends SupplierControllerCore {}
 class SupplyOrder extends SupplyOrderCore {}
 class SupplyOrderDetail extends SupplyOrderDetailCore {}
 class SupplyOrderHistory extends SupplyOrderHistoryCore {}
@@ -309,33 +325,35 @@ class Tab extends TabCore {}
 class Tag extends TagCore {}
 class Tax extends TaxCore {}
 class TaxCalculator extends TaxCalculatorCore {}
+class TaxConfiguration extends TaxConfigurationCore {}
 class TaxManagerFactory extends TaxManagerFactoryCore {}
-class TaxManagerModule extends TaxManagerModuleCore {}
 class TaxRule extends TaxRuleCore {}
 class TaxRulesGroup extends TaxRulesGroupCore {}
 class TaxRulesTaxManager extends TaxRulesTaxManagerCore {}
-class Theme extends ThemeCore {}
+class TemplateFinder extends TemplateFinderCore {}
 class Tools extends ToolsCore {}
 class Translate extends TranslateCore {}
 class TranslatedConfiguration extends TranslatedConfigurationCore {}
 class Tree extends TreeCore {}
 class TreeToolbar extends TreeToolbarCore {}
-class TreeToolbarButton extends TreeToolbarButtonCore {}
 class TreeToolbarLink extends TreeToolbarLinkCore {}
 class TreeToolbarSearch extends TreeToolbarSearchCore {}
 class TreeToolbarSearchCategories extends TreeToolbarSearchCategoriesCore {}
 class Upgrader extends UpgraderCore {}
 class Uploader extends UploaderCore {}
 class Validate extends ValidateCore {}
+class ValidateConstraintTranslator extends ValidateConstraintTranslatorCore {}
 class Warehouse extends WarehouseCore {}
 class WarehouseProductLocation extends WarehouseProductLocationCore {}
 class WebserviceException extends WebserviceExceptionCore {}
 class WebserviceKey extends WebserviceKeyCore {}
 class WebserviceOutputBuilder extends WebserviceOutputBuilderCore {}
+class WebserviceOutputJSON extends WebserviceOutputJSONCore {}
 class WebserviceOutputXML extends WebserviceOutputXMLCore {}
 class WebserviceRequest extends WebserviceRequestCore {}
 class WebserviceSpecificManagementImages extends WebserviceSpecificManagementImagesCore {}
 class WebserviceSpecificManagementSearch extends WebserviceSpecificManagementSearchCore {}
+class Windows extends WindowsCore {}
 class Zone extends ZoneCore {}
 
 /*******************************************/
@@ -346,3 +364,4 @@ class Autoload extends PrestaShopAutoload {}
 class Backup extends PrestaShopBackup {}
 class Collection extends PrestaShopCollection {}
 class Logger extends PrestaShopLogger {}
+
